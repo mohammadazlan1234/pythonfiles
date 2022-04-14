@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Pyolite",
+      "language": "python",
+      "name": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "intrpduction to tuple datatypes",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "id": "2bfb85ef-45d3-4774-bc50-04893ad0be07"
+    },
+    {
+      "cell_type": "code",
+      "source": "students=('nikhil','praveen','raheem','imran','keerthi','farida')",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 21,
+      "outputs": [],
+      "id": "ca03a704-6715-416e-8970-6869c40ef6b0"
+    },
+    {
+      "cell_type": "code",
+      "source": "print(students)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "nikhil,praveen,raheem,imran,keerthi,farida\n",
+          "output_type": "stream"
+        }
+      ],
+      "id": "31f898e4-4427-4d76-8538-94b2c8988243"
+    },
+    {
+      "cell_type": "code",
+      "source": "type(students)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "execution_count": 10,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "str"
+          },
+          "metadata": {}
+        }
+      ],
+      "id": "2f1b4fc8-3130-4425-92de-e5440226177a"
+    },
+    {
+      "cell_type": "code",
+      "source": "students[0]='naveed'",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "ename": "<class 'TypeError'>",
+          "evalue": "'str' object does not support item assignment",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "Input \u001b[0;32mIn [11]\u001b[0m, in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0m students[\u001b[38;5;241m0\u001b[39m]\u001b[38;5;241m=\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mnaveed\u001b[39m\u001b[38;5;124m'\u001b[39m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "id": "c574726f-9c79-4e5c-863d-809ac3bbb44d"
+    },
+    {
+      "cell_type": "code",
+      "source": "print(students)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "nikhil,praveen,raheem,imran,keerthi,farida\n",
+          "output_type": "stream"
+        }
+      ],
+      "id": "6111fda7-f86b-42a2-b213-078c1de78f3e"
+    },
+    {
+      "cell_type": "code",
+      "source": "req:i want to get the praveen name  in the output....?",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "id": "3c8a28fc-32d0-4342-a5e0-2cfcd0a85a60"
+    },
+    {
+      "cell_type": "code",
+      "source": "print(students[1])",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "praveen\n",
+          "output_type": "stream"
+        }
+      ],
+      "id": "d6d139bc-6f9b-42cf-8574-042d18ac8e06"
+    },
+    {
+      "cell_type": "code",
+      "source": "req: i want to implement a for loop on to the tuple?",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "id": "7bef79b1-5a47-45c0-b376-96d0fe171697"
+    },
+    {
+      "cell_type": "code",
+      "source": "for x in students:",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "id": "079bb590-3751-41d6-92f2-dc8570f439a5"
+    },
+    {
+      "cell_type": "code",
+      "source": "print(x)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "ename": "<class 'NameError'>",
+          "evalue": "name 'x' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "Input \u001b[0;32mIn [24]\u001b[0m, in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[43mx\u001b[49m)\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'x' is not defined"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "id": "6977246e-86a9-47a8-af36-c386c265fdaa"
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": [],
+      "id": "174d741a-86cf-4a57-8f20-14588812d529"
+    }
+  ]
+}
